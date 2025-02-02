@@ -1,0 +1,9 @@
+[ 2025-01-31 21:44:40,389 ] 21 root - INFO - Entere data injestion method or object
+[ 2025-01-31 21:44:40,475 ] 26 root - INFO - Read the specified dataset
+[ 2025-01-31 21:44:40,476 ] 30 root - INFO - artifacts folder created
+[ 2025-01-31 21:44:40,764 ] 34 root - INFO - data is stored
+[ 2025-01-31 21:44:40,857 ] 123 root - INFO - Read data from artifacts
+[ 2025-01-31 21:44:40,857 ] 111 root - INFO - Preprocessing pipeline created
+[ 2025-01-31 21:44:40,857 ] 126 root - INFO - preprocessor object created
+[ 2025-01-31 21:44:40,980 ] 129 root - INFO - Preprocessing has been done on df
+[ 2025-01-31 21:44:41,556 ] 131 root - INFO - Preprocessed data is stored in artifacts folder

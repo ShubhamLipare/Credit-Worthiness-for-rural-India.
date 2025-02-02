@@ -1,0 +1,12 @@
+[ 2025-02-01 00:16:33,904 ] 22 root - INFO - Entere data injestion method or object
+[ 2025-02-01 00:16:33,991 ] 27 root - INFO - Read the specified dataset
+[ 2025-02-01 00:16:33,991 ] 31 root - INFO - artifacts folder created
+[ 2025-02-01 00:16:34,262 ] 35 root - INFO - data is stored
+[ 2025-02-01 00:16:34,561 ] 40 root - INFO - train test data is stored
+[ 2025-02-01 00:16:34,677 ] 125 root - INFO - Read data from artifacts
+[ 2025-02-01 00:16:34,677 ] 114 root - INFO - Preprocessing pipeline created
+[ 2025-02-01 00:16:34,677 ] 128 root - INFO - preprocessor object created
+[ 2025-02-01 00:16:34,822 ] 132 root - INFO - Preprocessing has been done on training and testing data
+[ 2025-02-01 00:16:35,394 ] 135 root - INFO - Preprocessed training and testing data is stored in artifacts folder
+[ 2025-02-01 00:16:35,566 ] 18 root - INFO - cluster labels are created
+[ 2025-02-01 00:16:36,156 ] 141 root - INFO - clustering is completed and saved data

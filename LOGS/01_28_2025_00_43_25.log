@@ -1,0 +1,25 @@
+[ 2025-01-28 00:43:26,262 ] 23 root - INFO - Entere data injestion method or object
+[ 2025-01-28 00:43:26,351 ] 28 root - INFO - Read the specified dataset
+[ 2025-01-28 00:43:26,351 ] 32 root - INFO - artifacts folder created
+[ 2025-01-28 00:43:26,620 ] 36 root - INFO - Raw data is stored
+[ 2025-01-28 00:43:26,904 ] 41 root - INFO - train test data is stored
+[ 2025-01-28 00:43:27,019 ] 121 root - INFO - Read training and test data.
+[ 2025-01-28 00:43:27,020 ] 110 root - INFO - Preprocessing pipeline created
+[ 2025-01-28 00:43:27,020 ] 124 root - INFO - preprocessor object created
+[ 2025-01-28 00:43:27,149 ] 131 root - INFO - Preprocessing is applied to train and test df
+[ 2025-01-28 00:43:27,715 ] 139 root - INFO - Preprocessed array is stored in artifacts folder in .csv format
+[ 2025-01-28 00:43:27,719 ] 29 root - INFO - Model  training has begun
+[ 2025-01-28 00:43:27,719 ] 31 root - INFO - Enterted into evaluation util
+[ 2025-01-28 00:45:00,121 ] 39 root - INFO - fitted to GridSearchCV
+[ 2025-01-28 00:45:20,426 ] 50 root - INFO - generating models report
+[ 2025-01-28 00:45:55,739 ] 39 root - INFO - fitted to GridSearchCV
+[ 2025-01-28 00:45:55,882 ] 50 root - INFO - generating models report
+[ 2025-01-28 00:51:57,522 ] 39 root - INFO - fitted to GridSearchCV
+[ 2025-01-28 00:52:01,262 ] 50 root - INFO - generating models report
+[ 2025-01-28 00:52:01,500 ] 39 root - INFO - fitted to GridSearchCV
+[ 2025-01-28 00:52:01,514 ] 50 root - INFO - generating models report
+[ 2025-01-28 00:53:42,404 ] 39 root - INFO - fitted to GridSearchCV
+[ 2025-01-28 00:53:43,268 ] 50 root - INFO - generating models report
+[ 2025-01-28 00:53:43,268 ] 81 root - INFO - evaluation completed
+[ 2025-01-28 00:53:43,268 ] 85 root - INFO - Best model found for both training and test data name
+[ 2025-01-28 00:53:43,306 ] 95 root - INFO - saving predicted values and r2 score

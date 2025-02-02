@@ -1,0 +1,33 @@
+[ 2025-02-01 11:56:59,272 ] 22 root - INFO - Entere data injestion method or object
+[ 2025-02-01 11:56:59,547 ] 27 root - INFO - Read the specified dataset
+[ 2025-02-01 11:56:59,547 ] 31 root - INFO - artifacts folder created
+[ 2025-02-01 11:56:59,819 ] 35 root - INFO - data is stored
+[ 2025-02-01 11:57:00,156 ] 40 root - INFO - train test data is stored
+[ 2025-02-01 11:57:00,266 ] 125 root - INFO - Read data from artifacts
+[ 2025-02-01 11:57:00,267 ] 114 root - INFO - Preprocessing pipeline created
+[ 2025-02-01 11:57:00,267 ] 128 root - INFO - preprocessor object created
+[ 2025-02-01 11:57:00,419 ] 132 root - INFO - Preprocessing has been done on training and testing data
+[ 2025-02-01 11:57:00,995 ] 135 root - INFO - Preprocessed training and testing data is stored in artifacts folder
+[ 2025-02-01 11:57:01,533 ] 18 root - INFO - cluster labels are created
+[ 2025-02-01 11:57:02,537 ] 141 root - INFO - clustering is completed and saved data
+[ 2025-02-01 11:57:02,540 ] 29 root - INFO - Model  training has begun
+[ 2025-02-01 11:57:02,540 ] 31 root - INFO - Enterted into evaluation util
+[ 2025-02-01 11:57:03,747 ] 41 root - INFO - Model fitting is completed
+[ 2025-02-01 11:57:03,997 ] 48 root - INFO - Prediction is completed
+[ 2025-02-01 11:57:04,000 ] 53 root - INFO - generating models report
+[ 2025-02-01 11:57:04,051 ] 41 root - INFO - Model fitting is completed
+[ 2025-02-01 11:57:04,055 ] 48 root - INFO - Prediction is completed
+[ 2025-02-01 11:57:04,058 ] 53 root - INFO - generating models report
+[ 2025-02-01 11:57:10,177 ] 41 root - INFO - Model fitting is completed
+[ 2025-02-01 11:57:10,343 ] 48 root - INFO - Prediction is completed
+[ 2025-02-01 11:57:10,346 ] 53 root - INFO - generating models report
+[ 2025-02-01 11:57:10,464 ] 41 root - INFO - Model fitting is completed
+[ 2025-02-01 11:57:10,467 ] 48 root - INFO - Prediction is completed
+[ 2025-02-01 11:57:10,470 ] 53 root - INFO - generating models report
+[ 2025-02-01 11:57:11,273 ] 41 root - INFO - Model fitting is completed
+[ 2025-02-01 11:57:11,488 ] 48 root - INFO - Prediction is completed
+[ 2025-02-01 11:57:11,491 ] 53 root - INFO - generating models report
+[ 2025-02-01 11:57:11,493 ] 76 root - INFO - Saving train and test report to artifacts folder
+[ 2025-02-01 11:57:11,496 ] 86 root - INFO - evaluation completed
+[ 2025-02-01 11:57:11,496 ] 90 root - INFO - Best model found for both training and test data name:Logistic Regression
+[ 2025-02-01 11:57:11,496 ] 91 root - INFO - 0.9979166666666667

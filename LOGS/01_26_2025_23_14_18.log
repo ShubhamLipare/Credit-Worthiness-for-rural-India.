@@ -1,0 +1,9 @@
+[ 2025-01-26 23:14:29,660 ] 23 root - INFO - Entere data injestion method or object
+[ 2025-01-26 23:14:29,817 ] 28 root - INFO - Read the specified dataset
+[ 2025-01-26 23:14:29,818 ] 32 root - INFO - artifacts folder created
+[ 2025-01-26 23:14:30,097 ] 36 root - INFO - Raw data is stored
+[ 2025-01-26 23:14:30,407 ] 41 root - INFO - train test data is stored
+[ 2025-01-26 23:14:30,522 ] 120 root - INFO - Read training and test data.
+[ 2025-01-26 23:14:30,522 ] 109 root - INFO - Preprocessing pipeline created
+[ 2025-01-26 23:14:30,522 ] 123 root - INFO - preprocessor object created
+[ 2025-01-26 23:14:30,739 ] 127 root - INFO - Preprocessing is applied to train and test df
