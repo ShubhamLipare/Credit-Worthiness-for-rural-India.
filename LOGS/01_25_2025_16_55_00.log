@@ -1,5 +1,0 @@
-[ 2025-01-25 16:55:01,446 ] 23 root - INFO - Entere data injestion method or object
-[ 2025-01-25 16:55:01,531 ] 28 root - INFO - Read the specified dataset
-[ 2025-01-25 16:55:01,531 ] 32 root - INFO - artifacts folder created
-[ 2025-01-25 16:55:01,795 ] 36 root - INFO - Raw data is stored
-[ 2025-01-25 16:55:02,071 ] 41 root - INFO - train test data is stored
