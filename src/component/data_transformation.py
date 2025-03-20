@@ -111,7 +111,7 @@ class DataTransformation:
                 ]
             )
 
-            logging.info("Preprocessing pipeline created")
+            logging.info("Preprocessing pipeline created.")
 
             return preprocessor
             

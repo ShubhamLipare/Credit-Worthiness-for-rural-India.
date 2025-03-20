@@ -5,7 +5,7 @@ import pandas as pd
 from sklearn.ensemble import (AdaBoostClassifier,GradientBoostingClassifier,RandomForestClassifier)
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score,recall_score
 
 from dataclasses import dataclass
 from src.logger import logging
@@ -96,9 +96,9 @@ class ModelTrainer:
             )
 
             predicted=best_model.predict(x_test)
-            accuracy=accuracy_score(predicted,y_test)
+            recall=recall_score(y_test,predicted,average='macro')
 
-            return accuracy
+            return recall
 
             
 

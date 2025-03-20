@@ -43,8 +43,6 @@ class CustomeData:
             "sex": [self.sex],
             "type_of_house": [self.type_of_house],
             "home_ownership": [self.home_ownership],
-
-
             }
 
             return pd.DataFrame(custome_input_data_dict)

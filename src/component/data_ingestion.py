@@ -23,7 +23,7 @@ class DataInjestion:
 
         try:
 
-            df=pd.read_csv(r"G:\Resume projects\Calculating_credit_worthiness_for_rural_India\Data\trainingData .csv")
+            df=pd.read_csv(r"Data\trainingData .csv")
             logging.info("Read the specified dataset")
 
             ##creating artifacts directory
@@ -49,4 +49,3 @@ class DataInjestion:
 
         except Exception as e:
             raise CustomException(e,sys)
-

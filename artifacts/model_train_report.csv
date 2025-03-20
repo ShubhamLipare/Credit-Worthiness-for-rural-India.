@@ -1,6 +1,6 @@
 ,accuracy
 Random Forest,1.0
 Decision Tree,1.0
-Gradient Boosting,0.9949642857142857
-Logistic Regression,0.9988571428571429
-AdaBoost Classifier,0.9785357142857143
+Gradient Boosting,0.9913655057350986
+Logistic Regression,0.9982263960029507
+AdaBoost Classifier,0.9715789443711209

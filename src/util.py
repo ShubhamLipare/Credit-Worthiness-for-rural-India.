@@ -3,9 +3,12 @@ import sys
 import pickle
 from src.exception import CustomException
 from src.logger import logging
+import mlflow
+import mlflow.sklearn
+import numpy as np
 
 from sklearn.model_selection import GridSearchCV,RandomizedSearchCV
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score,recall_score
 
 def save_object(filepath,obj):
     try:
@@ -31,28 +34,41 @@ def evaluate_model(x_train,x_test,y_train,y_test,models,params):
         logging.info("Enterted into evaluation util")
         train_report={}
         test_report={}
+        mlflow.set_experiment("Model Evaluation")
+        mlflow.set_tracking_uri("http://localhost:5000")
+
+        #Hyperparameter tuning is not used here as data size is high 
+        #not able to train model
+
         for i in range(len(list(models))):
+            model_name = list(models.keys())[i]
             model=list(models.values())[i]
             param=params[list(models.keys())[i]]
 
-            #gs=GridSearchCV(model,param,cv=3)
-            #gs.fit(x_train,y_train)
-            model.fit(x_train,y_train)
-            logging.info("Model fitting is completed")
+            with mlflow.start_run(run_name=model_name):
+                for key,value in param.items():
+                    mlflow.log_param(key,value)
 
-            #model.set_params(**gs.best_params_)
-            #model.fit(x_train,y_train)
+                model.fit(x_train,y_train)
+                logging.info(f"{model_name} fitting is completed")
 
-            y_train_pred=model.predict(x_train)
-            y_test_pred=model.predict(x_test)
-            logging.info("Prediction is completed")
+                y_train_pred=model.predict(x_train)
+                y_test_pred=model.predict(x_test)
+                logging.info("Prediction is completed")
 
-            train_model_score=accuracy_score(y_train_pred,y_train)
-            test_model_score=accuracy_score(y_test_pred,y_test)
+                train_model_score=recall_score(y_train,y_train_pred,average='macro')
+                test_model_score=recall_score(y_test,y_test_pred,average='macro')
+                logging.info("Recall score is calculated")
+
+                logging.info("mlflow logging metrics")
+                mlflow.log_metric("Training accuracy",train_model_score)
+                mlflow.log_metric("Testing accuracy",test_model_score)
+                mlflow.sklearn.log_model(model,model_name)
             
-            logging.info("generating models report")
-            train_report[list(models.keys())[i]]=train_model_score
-            test_report[list(models.keys())[i]]=test_model_score
+                logging.info(f"generating models report for {model_name}")
+                train_report[list(models.keys())[i]]=train_model_score
+                test_report[list(models.keys())[i]]=test_model_score
+
         
         return train_report,test_report
         
