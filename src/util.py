@@ -35,7 +35,7 @@ def evaluate_model(x_train,x_test,y_train,y_test,models,params):
         train_report={}
         test_report={}
         mlflow.set_experiment("Model Evaluation")
-        mlflow.set_tracking_uri("http://localhost:5000")
+        mlflow.set_tracking_uri("https://credit-worthiness-for-rural-india.onrender.com")
 
         #Hyperparameter tuning is not used here as data size is high 
         #not able to train model

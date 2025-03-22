@@ -48,7 +48,7 @@ data = {
 if st.button('Predict Loan Approval'):
     try:
         # Call API for prediction
-        responce=requests.post("http://localhost:8000/predict",json=data)
+        responce=requests.post("https://credit-worthiness-for-rural-india-backend.onrender.com/predict",json=data)
         if responce.status_code==200:
             prediction=responce.json()["prediction"]
             st.success(f'Loan Approval Status: {"Approved" if prediction == 1 else "Rejected"}')
