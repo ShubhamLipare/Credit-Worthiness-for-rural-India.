@@ -4,4 +4,6 @@ seaborn
 matplotlib
 streamlit
 scikit-learn
-pickel
+pickle
+fastapi
+pydantic
